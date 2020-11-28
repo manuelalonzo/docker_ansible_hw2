@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.ssh.insert_key = false
 
  config.vm.provision "docker", type: "shell", inline: <<-SHELL
-    echo "Updating ...."
+    echo "Updating ......."
     sudo apt-get update -y
     echo "Installing docker ..."
     sudo apt install docker.io -y

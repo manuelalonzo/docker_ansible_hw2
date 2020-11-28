@@ -1,0 +1,9 @@
+#!/bin/bash
+yum update -y
+yum install docker -y
+service docker start
+docker -v
+sleep 5
+amazon-linux-extras install ansible2 -y
+ansible --version
+
